@@ -74,11 +74,11 @@ root/
 │
 ├── src/                   # Source folder
 │   ├── assets/            # Static assets (images, fonts, etc.)
-│   ├── components/        # Reusable React components
+│   ├── components/        # Reusable React/ShadCN components
 │   ├── pages/             # Pages for each navigation section
-│   ├── App.js             # Main application component
-│   ├── index.js           # Main entry point
-│   └── styles/            # CSS or Shadcn stylesheets
+│   ├── App.tsx             # Main application component
+│   ├── main.tsx           # Main entry point
+│              
 │
 ├── package.json           # Project dependencies and scripts
 ├── README.md              # Project documentation
@@ -91,8 +91,8 @@ root/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/library-system.git
-   cd library-system
+   git clonehttps://github.com/shrutik-1712/Open-access_libaray.git
+   cd Open-access_libaray
    ```
 
 2. **Install Dependencies**:
@@ -102,10 +102,10 @@ root/
 
 3. **Start Development Server**:
    ```bash
-   npm start
+   npm run dev
    ```
 
-   This will start the development server, and the project will be available at `http://localhost:3000`.
+   This will start the development server, and the project will be available at `http://localhost:5173`.
 
 ---
 
