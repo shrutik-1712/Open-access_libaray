@@ -31,10 +31,13 @@ const HeroCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 5000); // Change slide every 5 seconds
-
+    }, 10000); // Change slide every 10 seconds
     return () => clearInterval(interval);
   }, []);
+
+  const handlePointerClick = (index) => {
+    setCurrentIndex(index);
+  };
 
   return (
     <div className="relative w-full h-[400px] overflow-hidden">
@@ -59,6 +62,18 @@ const HeroCarousel = () => {
           </div>
         </div>
       ))}
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+        {heroImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePointerClick(index)}
+            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+              index === currentIndex ? 'bg-white' : 'bg-gray-400 hover:bg-gray-200'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };
