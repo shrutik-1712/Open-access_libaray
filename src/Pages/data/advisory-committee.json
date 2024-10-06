@@ -1,0 +1,18 @@
+[
+    {
+      "name": "John Doe",
+      "image": "/images/advisory/john-doe.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "image": "/images/advisory/jane-smith.jpg"
+    },
+    {
+      "name": "Alice Johnson",
+      "image": "/images/advisory/alice-johnson.jpg"
+    },
+    {
+      "name": "Bob Williams",
+      "image": "/images/advisory/bob-williams.jpg"
+    }
+  ]
