@@ -62,8 +62,8 @@ const InfoSection = ({ title, content }) => (
 )
 
 const Facilities = () => (
-  <section className="mb-12">
-    <h2 className="text-3xl font-semibold mb-4">M Library Facilities</h2>
+  <section className="container mx-auto px-4 py-8">
+    <h2 className="text-4xl font-bold mb-8">M Library Facilities</h2>
     <Tabs defaultValue="library">
       <TabsList className="mb-4">
         <TabsTrigger value="library">Main Library</TabsTrigger>
