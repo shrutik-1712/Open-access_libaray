@@ -48,7 +48,7 @@ const Header = () => {
         </button>
       </div>
       <nav className={`bg-gray-800 text-white ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-        <ul className="container mx-auto px-4 py-2 flex flex-col md:flex-row md:justify-between">
+        <ul className="container mx-auto px-4 py-2 flex flex-col md:flex-row md:justify-between ">
           {navItems.map((item, index) => (
             <li key={index} className="py-2 md:py-0">
               <button
