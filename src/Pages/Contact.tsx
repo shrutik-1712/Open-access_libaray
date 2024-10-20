@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Instagram, Facebook, Youtube, Send, Phone } from 'lucide-react';
@@ -11,7 +10,8 @@ const mapContainerStyle = {
 
 const center = {
   lat: 37.7749, // Replace with your latitude
-  lng: -122.4194 // Replace with your longitude
+  lng: -122.4194 // Replace with your longitude 
+  //4WVQ+F3 Mumbai, Maharashtra
 };
 
 const Contact = () => (
@@ -51,7 +51,7 @@ const Contact = () => (
               <Marker position={center} />
             </GoogleMap>
           </LoadScript>
-          <p className="text-sm text-gray-600 my-4">123 Main St, City, Country</p>
+          <p className="text-sm text-gray-600 my-4">Dina Patil Estate, Station Road,<br/> Bhandup (W) <br/>Mumbai 400078</p>
           
           <div className="flex flex-wrap gap-4 mb-4">
             <a href="#" className="flex items-center gap-2 text-blue-600 hover:text-blue-800">

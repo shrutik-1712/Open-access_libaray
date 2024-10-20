@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
@@ -8,9 +8,10 @@ const Footer = () => {
     { to: "/about", label: "About Us" },
     { to: "/facilities", label: "Library Facilities" },
     { to: "/opac", label: "OPAC Library" },
-    { to: "/alumni", label: "Alumni / Achievers" },
+    { to: "/alumini", label: "Alumini" },
     { to: "/events", label: "Events and Exhibitions" },
     { to: "/donations", label: "Donations" },
+    { to: "/e-resource", label: "E-resource" },
     { to: "/contact", label: "Contact Us" },
   ];
 
@@ -30,11 +31,11 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="flex items-center justify-center md:justify-start mb-2">
               <MapPin size={18} className="mr-2" />
-              <p>123 Library St, Booktown</p>
+              <p>Dina Patil Estate, Station Road,<br/> Bhandup (W) <br/>Mumbai 400078</p>
             </div>
             <div className="flex items-center justify-center md:justify-start">
               <Phone size={18} className="mr-2" />
-              <p>(123) 456-7890</p>
+              <p>+91 - 704572536</p>
             </div>
           </div>
 
@@ -65,7 +66,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>&copy; 2024 Open Access Library. All rights reserved.</p>
+          <p>&copy; Late Dina Bama Patil Pratishthan's DINA BAMA PATIL LIBRARY & STUDY ROOM. All rights reserved.</p>
         </div>
       </div>
     </footer>

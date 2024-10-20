@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
-const Carousel = ({ items }) => {
+const Carousel = ({ items }: { items: any[] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

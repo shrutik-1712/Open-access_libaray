@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from '@/components/ui/card';
 import alumniData from './Jsons/Alumini.json'; // Assuming this file exists
 

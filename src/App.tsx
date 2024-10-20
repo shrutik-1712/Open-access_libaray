@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,7 +9,8 @@ import Alumni from './Pages/Alumi';
 import Events from './Pages/events';
 import Donations from './Pages/Donations';
 import Contact from './Pages/Contact';
-
+import AdminPanel from './Pages/Admin';
+import EResource from './Pages/Eresource';
 const App = () => {
   return (
     <Router>
@@ -18,14 +18,16 @@ const App = () => {
         <Header />
         <main>
           <Routes>
+            <Route path="/admin" element={<AdminPanel/>} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/opac" element={<OPAC />} />
-            <Route path="/alumni" element={<Alumni />} />
+            <Route path="/alumini" element={<Alumni />} />
             <Route path="/events" element={<Events />} />
             <Route path="/donations" element={<Donations />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/e-resource" element={<EResource />} />
           </Routes>
         </main>
         <Footer />
