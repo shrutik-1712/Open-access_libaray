@@ -11,6 +11,10 @@ import Donations from './Pages/Donations';
 import Contact from './Pages/Contact';
 import AdminPanel from './Pages/Admin';
 import EResource from './Pages/Eresource';
+import ErrorPage from './Pages/Error404'
+import Libinfo from './Pages/Libinfo'
+import StudyRoom from './Pages/StudyRoom'
+
 const App = () => {
   return (
     <Router>
@@ -28,6 +32,10 @@ const App = () => {
             <Route path="/donations" element={<Donations />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/e-resource" element={<EResource />} />
+            <Route path="*" element={<ErrorPage />}/>
+            <Route path="/Library-info" element={<Libinfo />} />
+            <Route path="/StudyRoom" element={<StudyRoom />} />
+
           </Routes>
         </main>
         <Footer />
